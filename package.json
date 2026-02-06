@@ -1,0 +1,25 @@
+{
+  "name": "cheerskenya",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "json-server --watch db.json --port 3000",
+    "dev": "json-server --watch db.json --port 3000 --id id",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carly-cracker/CheersKenya.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carly-cracker/CheersKenya/issues"
+  },
+  "homepage": "https://github.com/carly-cracker/CheersKenya#readme",
+  "devDependencies": {
+    "json-server": "^1.0.0-beta.5"
+  }
+}
