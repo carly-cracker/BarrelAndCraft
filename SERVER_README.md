@@ -21,6 +21,23 @@ The server will start on `http://localhost:3000`
 
 ## Available Endpoints
 
+### Authentication
+- `POST /auth` - Login with age verification (requires email, password, age)
+  ```bash
+  curl -X POST http://localhost:3000/auth \
+    -H "Content-Type: application/json" \
+    -d '{
+      "email": "john@example.com",
+      "password": "password123",
+      "age": 32
+    }'
+  ```
+  **Age Check**: Users must be 18+ years old to authenticate. The endpoint validates:
+  - User exists in the system
+  - Password matches
+  - Age is at least 18
+  - Provided age matches the database record
+
 ### Products
 - `GET /products` - Get all products
 - `GET /products/1` - Get a specific product

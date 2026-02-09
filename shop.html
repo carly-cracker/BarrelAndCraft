@@ -8,7 +8,44 @@
     <link rel="stylesheet" href="index.css"> </head>
 <body class="shop-page">
     <nav class="glass-nav">
-        </nav>
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-wine-glass"></i>
+                <span>Barrel & Craft</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html" class="nav-link">Home</a></li>
+                <li><a href="shop.html" class="nav-link">Shop</a></li>
+                <li><a href="#whiskey" class="nav-link">Whiskey</a></li>
+                <li><a href="#craft-beer" class="nav-link">Craft Beer</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#" class="nav-icon" aria-label="Search">
+                    <i class="fas fa-search"></i>
+                </a>
+                <a href="cart.html" class="nav-icon cart-icon" aria-label="Shopping Cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+    <script>
+        function checkLoginCookie() {
+            const cookies = document.cookie.split(';');
+            const userLogin = cookies.find(c => c.trim().startsWith('userLogin='));
+            const localUser = localStorage.getItem('user');
+            if (!userLogin && !localUser) {
+                window.location.href = 'auth.html';
+            }
+        }
+        checkLoginCookie();
+    </script>
 
     <main class="shop-container">
         <aside class="filters-sidebar">
@@ -32,6 +69,20 @@
                 </div>
         </section>
     </main>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="cookie-content">
+            <div class="cookie-text">
+                <h3>Cookie Consent</h3>
+                <p>We use cookies to enhance your shopping experience and analyze site usage. By continuing, you accept our cookie policy.</p>
+            </div>
+            <div class="cookie-buttons">
+                <button id="accept-cookies" class="btn-accept">Accept</button>
+                <button id="decline-cookies" class="btn-decline">Decline</button>
+            </div>
+        </div>
+    </div>
 
     <script src="shop.js"></script>
 </body>

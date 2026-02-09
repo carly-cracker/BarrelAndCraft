@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Macallan 25 Year Old",
       "category": "whiskey",
       "price": 850,
@@ -13,7 +13,7 @@
       "origin": "Scotland"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Guinness Draught Beer",
       "category": "whiskey",
       "price": 45,
@@ -25,7 +25,7 @@
       "origin": "Ireland"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Stella Artois Lager",
       "category": "craft-beer",
       "price": 8,
@@ -37,7 +37,7 @@
       "origin": "Ireland"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Stella Artois Lager",
       "category": "craft-beer",
       "price": 6,
@@ -49,7 +49,7 @@
       "origin": "Belgium"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Glenmorangie The Original",
       "category": "whiskey",
       "price": 65,
@@ -61,7 +61,7 @@
       "origin": "Scotland"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Heineken Premium",
       "category": "craft-beer",
       "price": 5,
@@ -75,7 +75,7 @@
   ],
   "cart": [
     {
-      "id": 1,
+      "id": "1",
       "productId": 1,
       "quantity": 1,
       "price": 850
@@ -83,7 +83,7 @@
   ],
   "orders": [
     {
-      "id": 1,
+      "id": "1",
       "userId": 1,
       "items": [
         {
@@ -98,7 +98,7 @@
       "deliveryAddress": "Nairobi, Kenya"
     },
     {
-      "id": 2,
+      "id": "2",
       "userId": 1,
       "items": [
         {
@@ -115,27 +115,50 @@
   ],
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "name": "John Doe",
       "email": "john@example.com",
+      "password": "password123",
+      "age": 32,
       "phone": "+254712345678",
       "address": "123 Main St, Nairobi",
       "memberSince": "2025-06-10",
-      "favoriteProducts": [1, 3, 5]
+      "favoriteProducts": [
+        1,
+        3,
+        5
+      ]
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Jane Smith",
       "email": "jane@example.com",
+      "password": "securepass456",
+      "age": 28,
       "phone": "+254798765432",
       "address": "456 Oak Ave, Nairobi",
       "memberSince": "2025-09-22",
-      "favoriteProducts": [2, 4]
+      "favoriteProducts": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": "4d87",
+      "email": "john@example.com",
+      "password": "kalonje#763",
+      "age": 32
+    },
+    {
+      "id": "2b0c",
+      "email": "john@example.com",
+      "password": "password123",
+      "age": 32
     }
   ],
   "reviews": [
     {
-      "id": 1,
+      "id": "1",
       "productId": 1,
       "userId": 1,
       "rating": 5,
@@ -143,7 +166,7 @@
       "date": "2026-02-01"
     },
     {
-      "id": 2,
+      "id": "2",
       "productId": 3,
       "userId": 2,
       "rating": 5,
@@ -153,19 +176,19 @@
   ],
   "categories": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Whiskey",
       "slug": "whiskey",
       "description": "Premium single malts and blended whiskeys"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Craft Beer",
       "slug": "craft-beer",
       "description": "Artisanal beers from around the world"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Wine",
       "slug": "wine",
       "description": "Fine wines and spirits"
